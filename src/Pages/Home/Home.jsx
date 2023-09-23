@@ -12,6 +12,9 @@ const Home = () => {
                 <JobCategory ></JobCategory>
                 <Jobs jobs={jobs}></Jobs>
             </div>
+            <div className="justify-center flex mt-4 mb-20">
+                    <button className="btn  bg-gradient-to-r from-cyan-500 to-blue-500 text-white">See All Jobs</button>
+            </div>
         </div>
     );
 };

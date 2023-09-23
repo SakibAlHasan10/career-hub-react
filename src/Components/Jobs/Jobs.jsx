@@ -1,5 +1,5 @@
 import Job from "./Job";
-
+import PropTypes from 'prop-types'
 const Jobs = ({jobs}) => {
     return (
         <div className="text-center">
@@ -13,5 +13,7 @@ const Jobs = ({jobs}) => {
         </div>
     );
 };
-
+Jobs.propTypes ={
+    jobs: PropTypes.array
+}
 export default Jobs;
