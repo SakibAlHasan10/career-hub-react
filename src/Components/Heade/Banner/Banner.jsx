@@ -1,9 +1,11 @@
+import BannerImg from "./BannerImg";
 import BannerTest from "./BannerTest";
 
 const Banner = () => {
     return (
-        <div className="h-[30rem] bg-red-500">
+        <div className=" flex justify-between pl-8">
             <BannerTest></BannerTest>
+            <BannerImg></BannerImg>
         </div>
     );
 };

@@ -40,7 +40,7 @@ const Navbar = () => {
                     </NavLink>
                     </li>
                     </ul>
-                    <button className="btn btn-primary">Star Applying</button>
+                    <button className="btn bg-gradient-to-r from-cyan-500 to-blue-500">Star Applying</button>
                 {/* </div> */}
             </nav>
         </div>
