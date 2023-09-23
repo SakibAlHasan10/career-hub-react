@@ -1,7 +1,10 @@
 import { useLoaderData, useParams } from "react-router-dom";
-
+import { setLocalStorage } from "../../Utility/LocalStore";
+// import setLocalStorage '/LocalStore.js'
 const JobDetails = () => {
+    
     const jobDetails = useLoaderData()
+     
     const {id} = useParams()
     const findJob = jobDetails.find(job => job.id === parseInt(id))
     console.log( findJob)
@@ -27,7 +30,7 @@ const JobDetails = () => {
                     <p className="text-base font-semibold pb-2"> <span className="text-base font-extrabold">Email :</span> {contact_information.email}</p>
                     <p className="text-base font-semibold pb-2"> <span className="text-base font-extrabold">Address :</span> {contact_information.address}</p>
                 </div>
-                <button  className="btn  bg-gradient-to-r from-cyan-500 to-blue-500 w-full text-white">Apply Now</button>
+                <button onClick={()=>setLocalStorage(id)}  className="btn  bg-gradient-to-r from-cyan-500 to-blue-500 w-full text-white">Apply Now</button>
 
             </div>
         </div>
