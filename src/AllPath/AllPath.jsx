@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootFile from "../RootFile/RootFile";
 import Home from "../Pages/Home/Home";
+import JobDetails from "../Components/JobDetails/JobDetails";
+import Statistics from "../Pages/Statistics/Statistics";
 
 const router = createBrowserRouter([
 {
@@ -14,7 +16,14 @@ const router = createBrowserRouter([
         },
         {
             path: '/Statistics',
-            element: <div>Statistics</div>
+            element: <Statistics></Statistics>,
+            loader: ()=> fetch('/public/jobs.json'),
+            children:[
+                {
+                    path: '/Statistics/:id',
+                    element: <JobDetails></JobDetails>
+                }
+            ]
         },
         {
             path: '/applied_jobs',
