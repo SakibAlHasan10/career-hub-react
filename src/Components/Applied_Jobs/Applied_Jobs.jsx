@@ -8,7 +8,7 @@ const Applied_Jobs = () => {
     const allData = jobData.filter(job => localData.includes(job.id+''))
     // console.log(allData, localData)
     return (
-        <div>
+        <div className="max-w-screen-xl mx-auto px-8">
             {
                 allData.map((job, i) => <Applied_job key={i} job={job}></Applied_job>)
             }
