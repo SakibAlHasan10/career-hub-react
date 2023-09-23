@@ -1,9 +1,11 @@
+import Banner from "./Banner/Banner";
 import Navbar from "./Navbar/Navbar";
 
 const Header = () => {
     return (
-        <div className="max-w-screen-xl mx-auto px-8 h-[40rem] bg-slate-400">
+        <div className="max-w-screen-xl mx-auto px-8  ">
             <Navbar></Navbar>
+            <Banner></Banner>
             header
         </div>
     );
