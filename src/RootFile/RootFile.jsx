@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-// import Header from "../Components/Heade/Header";
 import Navbar from "../Components/Heade/Navbar/Navbar";
+import Fotter from "../Components/Fotter/Fotter";
 
 const RootFile = () => {
     return (
         <div>
             <Navbar></Navbar>
             <Outlet></Outlet>
-            {/* <Header></Header> */}
+            <Fotter></Fotter>
         </div>
     );
 };
