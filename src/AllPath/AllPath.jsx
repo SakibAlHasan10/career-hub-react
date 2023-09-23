@@ -3,6 +3,7 @@ import RootFile from "../RootFile/RootFile";
 import Home from "../Pages/Home/Home";
 import JobDetails from "../Components/JobDetails/JobDetails";
 import Statistics from "../Pages/Statistics/Statistics";
+import Applied_Jobs from "../Components/Applied_Jobs/Applied_Jobs";
 
 const router = createBrowserRouter([
 {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
             path: '/Statistics',
             element: <Statistics></Statistics>,
             children:[
+                {
+                    path: '/Statistics',
+                    element: <Applied_Jobs></Applied_Jobs>,
+                    loader: ()=> fetch('/jobs.json'),
+                },
                 {
                     path: '/Statistics/:id',
                     element: <JobDetails></JobDetails>,

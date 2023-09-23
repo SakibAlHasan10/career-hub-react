@@ -1,7 +1,10 @@
 const getLocalStorage = () =>{
     const job = localStorage.getItem('job')
+    // console.log(job)
     if(job){
         return JSON.parse(job)
+    // console.log(JSON.parse(job))
+
     } return []
 }
 const setLocalStorage = (id) =>{
@@ -10,7 +13,6 @@ const setLocalStorage = (id) =>{
     if(findId){
         return
     }else{
-        
         callLocalStore.push(id)
         localStorage.setItem('job', JSON.stringify(callLocalStore))
     }
