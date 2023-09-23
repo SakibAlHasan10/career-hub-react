@@ -1,12 +1,11 @@
 import Banner from "./Banner/Banner";
-import Navbar from "./Navbar/Navbar";
 
 const Header = () => {
     return (
-        <div className="max-w-screen-xl mx-auto px-8  ">
-            <Navbar></Navbar>
-            <Banner></Banner>
-            header
+        <div className="bg-[#f9f9ff] ">
+            <div className="max-w-screen-xl mx-auto  ">
+                <Banner></Banner>
+            </div>
         </div>
     );
 };

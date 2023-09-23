@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div >
-            <nav className="lg:flex justify-between items-center py-6 shadow-md px-8">
+        <div className="bg-[#f9f9ff]">
+            <nav className="lg:flex justify-between items-center py-6  max-w-screen-xl mx-auto px-8">
                 <div className="">
                     <h1 className="text-4xl font-semibold">CareerHub</h1>
                 </div>
